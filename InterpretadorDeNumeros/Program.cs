@@ -63,9 +63,8 @@ namespace InterpretadorDeNumeros
             Console.WriteLine(linha12);
             linhas.ReadLine();
 
-            Console.WriteLine("\r\n------------------------------------------------------------");
+            Console.WriteLine("\n------------------------------------------------------------");
 
-            //processamento
             char[] primeiroChar = linha1.ToCharArray();
             char[] segundoChar = linha2.ToCharArray();
             char[] terceiroChar = linha3.ToCharArray();
@@ -79,24 +78,24 @@ namespace InterpretadorDeNumeros
             char[] decimoprimeiroChar = linha11.ToCharArray();
             char[] decimosegundoChar = linha12.ToCharArray();
 
-            Console.WriteLine(quartoChar.Length);
-
             Console.WriteLine("\r\nSaída:");
-            int repete = 0;
-            //linha1
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            //Linha1
             for (int i = 0; i < primeiroChar.Length ; i++)
             {
                 combinacao1 = combinacao1+ primeiroChar[i];
                 combinacao2 = combinacao2 + segundoChar[i];
                 combinacao3 = combinacao3 + terceiroChar[i];
 
-                if (combinacao1 == " __ " && combinacao2 == "|  |" && combinacao3 == "|__|")//9
+                if (combinacao1 == " __ " && combinacao2 == "|  |" && combinacao3 == "|__|")//0
                 {
                     Console.Write("0");
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == "    " && combinacao2 =="   |" && combinacao3 == "   |")//1
                 {
@@ -104,7 +103,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if(combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == "|__ ")//2
                 {
@@ -112,7 +110,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == " __|")//3
                 {
@@ -127,7 +124,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == " __|")//5
                 {
@@ -135,7 +131,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == "|__|")//6
                 {
@@ -143,7 +138,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "   |" && combinacao3 == "   |")//7
                 {
@@ -151,7 +145,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == "|__|")//8
                 {
@@ -159,7 +152,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == " __|")//9
                 {
@@ -167,13 +159,8 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
             }
-
-            combinacao1 = "";
-            combinacao2 = "";
-            combinacao3 = "";
 
             Console.WriteLine();
             //linha2
@@ -190,7 +177,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == "    " && combinacao2 == "   |" && combinacao3 == "   |")//1
                 {
@@ -198,7 +184,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == "|__ ")//2
                 {
@@ -206,7 +191,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == " __|")//3
                 {
@@ -221,7 +205,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == " __|")//5
                 {
@@ -229,7 +212,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == "|__|")//6
                 {
@@ -237,7 +219,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "   |" && combinacao3 == "   |")//7
                 {
@@ -245,7 +226,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == "|__|")//8
                 {
@@ -253,7 +233,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == " __|")//9
                 {
@@ -261,13 +240,8 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
             }
-
-            combinacao1 = "";
-            combinacao2 = "";
-            combinacao3 = "";
 
             Console.WriteLine();
             //linha3
@@ -284,7 +258,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == "    " && combinacao2 == "   |" && combinacao3 == "   |")//1
                 {
@@ -292,7 +265,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == "|__ ")//2
                 {
@@ -300,7 +272,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == " __|")//3
                 {
@@ -315,7 +286,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == " __|")//5
                 {
@@ -323,7 +293,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == "|__|")//6
                 {
@@ -331,7 +300,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "   |" && combinacao3 == "   |")//7
                 {
@@ -339,7 +307,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == "|__|")//8
                 {
@@ -347,7 +314,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == " __|")//9
                 {
@@ -355,13 +321,8 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
             }
-
-            combinacao1 = "";
-            combinacao2 = "";
-            combinacao3 = "";
 
             Console.WriteLine();
             //linha4
@@ -378,7 +339,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == "    " && combinacao2 == "   |" && combinacao3 == "   |")//1
                 {
@@ -386,7 +346,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == "|__ ")//2
                 {
@@ -394,7 +353,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == " __|" && combinacao3 == " __|")//3
                 {
@@ -409,7 +367,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == " __|")//5
                 {
@@ -417,7 +374,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__ " && combinacao3 == "|__|")//6
                 {
@@ -425,7 +381,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "   |" && combinacao3 == "   |")//7
                 {
@@ -433,7 +388,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == "|__|")//8
                 {
@@ -441,7 +395,6 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
                 if (combinacao1 == " __ " && combinacao2 == "|__|" && combinacao3 == " __|")//9
                 {
@@ -449,9 +402,10 @@ namespace InterpretadorDeNumeros
                     combinacao1 = "";
                     combinacao2 = "";
                     combinacao3 = "";
-                    repete++;
                 }
             }
+            Console.WriteLine();
+            Console.WriteLine(); 
 
         }
     }
